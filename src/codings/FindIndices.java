@@ -2,6 +2,7 @@ package codings;
 
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 
 //BrouteForce approach
 public class FindIndices {
@@ -27,7 +28,7 @@ public class FindIndices {
 	
 	public static int[] findIndeces(int[] nums,int target) {
 		
-		HashMap<Integer, Integer> map = new HashMap<>();
+		Map<Integer, Integer> map = new HashMap<>();
 		
 		for(int i =0;i<nums.length;i++) {
 			map.put(nums[i], i);

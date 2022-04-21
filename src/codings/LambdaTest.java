@@ -15,6 +15,13 @@ public class LambdaTest {
 	    interface FuncInter2
 	    {
 	        void sayMessage(String message);
+	        
+	        default int show(String s) {
+				return 0;
+			}
+	        static int message(String n) {
+				return 0;
+			}
 	    }
 	  
 	    // Performs FuncInter1's operation on 'a' and 'b'
